@@ -17,9 +17,9 @@ func main() {
 		log.Fatal(err)
 		panic(err)
 	} else {
-		for i := 4; i <= 12; i++ {
+		for i := 1; i <= 12; i++ {
 			fmt.Println("Value of i is now:", i)
-			yearMonth := strconv.Itoa(201400 + i)
+			yearMonth := strconv.Itoa(201700 + i)
 			voucherContents := strings.Replace(string(contents), "$voucherMonth$", yearMonth, 1)
 			voucherFile, err := os.Create("ChildcareVoucher-" + yearMonth + ".html")
 
